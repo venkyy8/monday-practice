@@ -2,24 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-      stage('compile'){
+      stage('git checkout') {
         steps{
-          echo 'compile...'
+          echo 'git branch: 'main', url: 'https://github.com/venkyy8/monday-practice.git''
         }
       }
     }
