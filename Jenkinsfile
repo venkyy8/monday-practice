@@ -8,7 +8,7 @@ pipeline {
       }
       stage('test cases') {
         steps{
-          sh 'mvn test'
+          sh 'build 'test''
         }
       }
     }
